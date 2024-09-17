@@ -1,0 +1,1101 @@
+body {
+   background-color: #FBFCFE;
+}
+
+a {
+   transition: color 0.2s ease;
+}
+a:hover {
+   color: #f27b6d;
+}
+
+button {
+   transition: all 0.3s ease-in-out;
+}
+button:hover {
+   transform: scale(1.05);
+}
+button:focus {
+   background: rgb(200, 92, 80);
+}
+
+
+.container {
+   max-width: 1190px;
+   padding: 0px 10px;
+   margin: 0 auto;
+
+   overflow-x: hidden;
+}
+
+.header {
+   margin-top: 40px;
+}
+
+.header__content {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   position: relative;
+}
+
+.logotype {
+   display: flex;
+   align-items: center;
+   gap: 9px;
+}
+
+.logo-name {
+   color: rgb(61, 61, 63);
+   font-family: Rubik;
+   font-size: 32px;
+   font-weight: 500;
+   letter-spacing: 0.5px;
+}
+
+.nav-items {
+   display: flex;
+   gap: 50px;
+   color: rgb(21, 10, 41);
+   font-family: Manrope;
+   font-size: 16px;
+   font-weight: 600;
+}
+
+.header__btn {
+   width: 137px;
+   height: 50px;
+   border-radius: 50px;
+   background: rgb(253, 105, 90);
+
+   color: rgb(255, 255, 255);
+   font-family: Mulish;
+   font-size: 16px;
+   font-weight: 600;
+}
+
+.burger-btn {
+   width: 30px;
+   height: 30px;
+   position: relative;
+   z-index: 110;
+   display: none;
+   cursor: pointer;
+}
+
+.burger__line {
+   display: block;
+   width: 100%;
+   height: 2px;
+   background-color: #000;
+   transition: 0.3s ease-in-out;
+   position: absolute;
+}
+
+.burger__line:nth-child(1) {
+   top: 5px;
+}
+.burger__line:nth-child(2) {
+   top: 15px;
+}
+.burger__line:nth-child(3) {
+   top: 15px;
+}
+.burger__line:nth-child(4) {
+   top: 25px;
+}
+
+.burger-active .burger__line:nth-child(1) {
+   transform: scale(0);
+}
+
+.burger-active .burger__line:nth-child(2) {
+   transform: rotate(45deg);
+}
+
+.burger-active .burger__line:nth-child(3) {
+   transform: rotate(-45deg);
+}
+
+.burger-active .burger__line:nth-child(4) {
+   transform: scale(0);
+}
+
+.burger__menu {
+   background-color: #ECEDFC;
+   width: 250px;
+   height: 300px;
+   padding-left: 10px;
+   position: absolute;
+   top: 0;
+   right: -30px;
+   display: block;
+   z-index: 10;
+   color: rgba(21, 10, 41, 0.802);
+   font-family: Manrope;
+   font-size: 16px;
+   font-weight: 600;
+
+   transform: translateX(100%);
+   transition: all 0.4s ease-in;
+}
+
+.burger__menu--active {
+   transform: translateX(0%);
+}
+
+
+.burger__item-row {
+   padding-top: 10px;
+}
+
+.burger__menu_item {
+   font-size: 16px;
+   padding-bottom: 40px;
+}
+
+.burger__menu_item:last-child {
+   padding-bottom: 0px;
+}
+
+.nav-btn-burger {
+   font-family: Manrope;
+   font-size: 16px;
+   font-weight: 400;
+   color: aliceblue;
+   border-radius: 50px;
+   padding: 10px 10px;
+   background-color: rgb(253, 105, 90);
+}
+
+/* ------------------------------ Блок 1 ------------------------------ */
+.primary {
+   display: flex;
+   margin-top: 100px;
+}
+
+.accent-color {
+   color: rgb(253, 105, 90);
+}
+.primary__title {
+   font-family: Mulish;
+   font-size: 70px;
+   font-weight: 800;
+   line-height: 94px;
+   letter-spacing: 2px;
+}
+
+.primary__subtitle {
+   max-width: 464px;
+   color: rgb(61, 61, 63);
+   opacity: 0.75;
+   font-family: Manrope;
+   font-size: 21px;
+   font-weight: 400;
+   line-height: 34px;
+
+   margin-top: 53px;
+}
+
+.primary__buttons {
+   display: flex;
+   align-items: center;
+   gap: 38px;
+   margin-top: 64px;
+}
+
+.get-started {
+   width: 162px;
+   height: 59px;
+   border-radius: 50px;
+   background: rgb(253, 105, 90);
+   color: rgb(255, 255, 255);
+   font-family: Mulish;
+   font-size: 18px;
+   font-weight: 700;
+}
+
+.video {
+   width: 183.07px;
+   height: 48px;
+   display: flex;
+   align-items: center;
+   gap: 12px;
+
+   background-color: transparent;
+}
+
+.video:focus {
+   background: transparent;
+}
+
+.img-video-btn {
+   box-shadow: 0px 4px 22px 0px rgba(0, 0, 0, 0.05);
+   border-radius: 50%;
+}
+
+.video-btn-txt {
+   color: rgb(253, 105, 90);
+   font-family: Mulish;
+   font-size: 18px;
+   font-weight: 400;
+}
+
+.primary__images {
+   position: relative;
+}
+
+.three-icon {
+   position: absolute;
+   z-index: 20;
+   top: 3%;
+   left: 20%;
+}
+
+.funny-girl {
+   width: auto;
+}
+
+.expertTeam {
+   position: absolute;
+   top: 48%;
+   left: -20%;
+   width: auto;
+}
+
+.count-projects {
+   position: absolute;
+   top: 1%;
+   right: 5%;
+   width: auto;
+}
+
+.clientsGet {
+   position: absolute;
+   bottom: 17%;
+   right: -10%; 
+   width: auto;
+}
+/* ------------------------------ Блок 2 ------------------------------ */
+.clients {
+   margin-top: 109px;
+}
+
+.clients__title {
+   color: rgb(61, 61, 63);
+   font-family: Mulish;
+   font-size: 18px;
+   font-weight: 700;
+   text-align: center;
+}
+
+.companies__items {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   gap: 30px;
+   margin-top: 50px;
+}
+
+.companies__items img {
+   width: auto;
+}
+/* ------------------------------ Блок 3 ------------------------------ */
+.services {
+   margin-top: 120px;
+   display: flex;
+}
+
+.services__info {
+   max-width: 530px;
+}
+
+.services__point {
+   color: rgb(253, 105, 90);
+   font-family: Mulish;
+   font-size: 24px;
+   font-weight: 600;
+   line-height: 50px;
+}
+
+.services__title {
+   color: rgb(61, 61, 63);
+   font-family: Mulish;
+   font-size: 42px;
+   font-weight: 700;
+   line-height: 50px;
+   margin-top: 9px;
+}
+
+
+.services__subtitle {
+   color: rgb(81, 81, 81);
+   font-family: Mulish;
+   font-size: 16px;
+   font-weight: 600;
+   line-height: 26px;
+   margin-top: 31px;
+}
+
+.services__button {
+   width: 203px;
+   height: 50px;
+   border-radius: 50px;
+   background: rgb(253, 105, 90);
+   color: rgb(255, 255, 255);
+   font-family: Mulish;
+   font-size: 18px;
+   font-weight: 700;
+   margin-top: 25px;
+}
+
+.services__cards {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 32px;
+}
+
+.services__card {
+   padding: 32px 25px 29px;
+   border-radius: 15px;
+   box-shadow: 0px 6px 12px 0px rgba(44, 22, 84, 0.01);
+   background: rgb(255, 255, 255);
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.card__img img {
+   width: auto;
+}
+.card__title {
+   margin-top: 16px;
+   color: rgb(55, 56, 61);
+   font-family: Mulish;
+   font-size: 20px;
+   font-weight: 700;
+   line-height: 28px;
+}
+.card__subtitle {
+   margin-top: 8px;
+   color: rgb(116, 116, 116);
+   font-family: DM Sans;
+   font-size: 13.5px;
+   font-weight: 400;
+   line-height: 26px;
+   height: 100%;
+}
+.card__link {
+   margin-top: 12px;
+   color: rgb(61, 61, 63);
+   font-family: DM Sans;
+   font-size: 12px;
+   font-weight: 500;
+   line-height: 26px;
+   text-decoration-line: underline;
+}
+
+/* ------------------------------ Блок 4 ------------------------------ */
+.about {
+   margin-top: 133px;
+   display: grid;
+   grid-template-columns: 45% 55%;
+}
+
+.about__info {
+   padding: 103px 0 89px;
+   max-width: 550px;
+}
+
+.about__point {
+   color: rgb(253, 105, 90);
+   font-family: Mulish;
+   font-size: 24px;
+   font-weight: 600;
+   line-height: 50px;
+}
+
+.about__title {
+   color: rgb(61, 61, 63);
+   font-family: Mulish;
+   font-size: 42px;
+   font-weight: 700;
+   line-height: 50px;
+   margin-top: 25px;
+}
+
+.about__subtitle {
+   color: rgb(81, 81, 81);
+   font-family: Mulish;
+   font-size: 16px;
+   font-weight: 600;
+   line-height: 26px;
+   margin-top: 31px;
+}
+
+.about__btn {
+   width: 174px;
+   height: 50px;
+   border-radius: 50px;
+   background: rgb(253, 105, 90);
+   color: rgb(255, 255, 255);
+   font-family: Mulish;
+   font-size: 16px;
+   font-weight: 700;
+   line-height: 28px;
+   margin-top: 25px;
+}
+
+.man-img {
+   width: 100%;
+}
+/* ------------------------------ Блок 5 ------------------------------ */
+.portfolio {
+   margin-top: 134px;
+}
+
+.porfolio__point {
+   color: rgb(253, 105, 90);
+   font-family: Mulish;
+   font-size: 24px;
+   font-weight: 600;
+   line-height: 50px;
+}
+
+.portfolio__title {
+   color: rgb(61, 61, 63);
+   font-family: Mulish;
+   font-size: 42px;
+   font-weight: 700;
+   line-height: 50px;
+   margin-top: 25px;
+}
+
+.portfolio__navigation {
+   margin-top: 52px;
+   display: flex;
+   justify-content: space-between;
+   align-items: start;
+}
+
+.portfolio__navigation_items {
+   display: flex;
+   gap: 65px;
+   color: rgb(204, 204, 204);
+   font-family: Mulish;
+   font-size: 16px;
+   font-weight: 700;
+   line-height: 22px;
+}
+
+.portfolio__btn {
+   display: flex;
+   gap: 5px;
+   background-color: transparent;
+}
+
+.portfolio__btn_txt {
+   color: rgb(61, 61, 63);
+   font-family: Mulish;
+   font-size: 16px;
+   font-weight: 600;
+   line-height: 22px;
+}
+
+.porfolio__cards {
+   margin-top: 42px;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 40px;
+}
+
+.portfolio__card {
+   max-width: 360px;
+   justify-self: center;
+}
+
+.portfolio__card img{
+  width: 100%;
+  height: auto;
+}
+
+
+/* Acordeon */
+.accordeon__question {
+   width: 100%;
+   display: inline;
+   margin: 0;
+   color: rgb(61, 61, 63);
+   cursor: pointer;
+   font-size: 18px;
+   padding-right: 20px;
+   position: relative;
+}
+
+.accordeon__question::after {
+   content: '\25BC';
+   font-size: 16px;
+   transition: all 0.3s ease;
+   position: absolute;
+   right: 0;
+}
+
+.accordeon__answer {
+   padding-top: 10px;
+   font-size: 16px;
+   max-height: 0;
+   overflow: hidden;
+   transition: all 0.4s ease-in;
+   opacity: 0;
+}
+
+.accordeon__items {
+   display: flex;
+   flex-direction: column;
+}
+
+.accordeon__item {
+   color: rgb(204, 204, 204);
+   font-family: Mulish;
+   font-size: 16px;
+   font-weight: 700;
+   line-height: 22px;
+   margin-top: 20px;
+   display: none;
+}
+
+.accordeon__question--active::after {
+   transform: rotate(180deg);
+   transition: transform 0.3s ease;
+}
+.accordeon__answer--visible {
+   opacity: 1;
+   overflow: visible;
+   max-height: max-content;
+   transition: all 0.4s ease-in;
+}
+
+
+/* ------------------------------ Блок 6 ------------------------------ */
+.reviews {
+   margin-top: 143px;
+}
+
+.reviews__point {
+   color: rgb(253, 105, 90);
+   font-family: Mulish;
+   font-size: 24px;
+   font-weight: 600;
+   line-height: 50px;
+   text-transform: uppercase;
+}
+
+.reviews__title {
+   color: rgb(61, 61, 63);
+   font-family: Mulish;
+   font-size: 42px;
+   font-weight: 700;
+   line-height: 50px;
+   margin-top: 16px;
+}
+
+.reviews__content {
+   display: flex;
+   gap: 40px;
+   align-items: center;
+   margin-top: 35px;
+}
+
+.review {
+   border-radius: 29px;
+   background: rgb(255, 255, 255);
+   padding: 33px 41px;
+}
+
+.review__header {
+   display: flex;
+   align-items: center;
+   gap: 16px;
+}
+
+.name {
+   color: rgb(61, 61, 63);
+   font-family: Mulish;
+   font-size: 22px;
+   font-weight: 700;
+   line-height: 26px;
+}
+
+.him-company {
+   color: rgb(61, 61, 63);
+   font-family: Mulish;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 26px;
+}
+
+.review__main {
+   color: rgb(117, 117, 117);
+   font-family: Mulish;
+   font-size: 16px;
+   font-weight: 600;
+   line-height: 155%;
+   max-width: 434px;
+   margin-top: 34px;
+}
+
+.buttons {
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+}
+
+.btn-left {
+   width: 48.05px;
+   height: 48.05px;
+   background: rgb(255, 255, 255);
+   border-radius: 50%;
+}
+
+
+.btn-right {
+   width: 48.05px;
+   height: 48.05px;
+   background: rgb(253, 105, 90);
+   border-radius: 50%;
+}
+
+.all-reviews__img {
+   width: 100%;
+}
+
+.review__header_avatar img {
+   width: 100%;
+} 
+
+
+/* ------------------------------ Блок 7 ------------------------------ */
+.goWork {
+   margin-top: 45px;
+   margin-bottom: 145px;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   height: 417px;
+}
+
+.goWork__banner {
+   height: 284px;
+   border: 4px solid rgb(255, 255, 255);
+   border-radius: 15px;
+   box-shadow: 0px 4px 33px 0px rgba(0, 0, 0, 0.03);
+   background: linear-gradient(132.92deg, rgba(255, 255, 255, 0.32) 0.158%,rgba(255, 255, 255, 0.6) 99.789%);
+
+   position: relative;
+}
+
+.banner__content {
+   display: flex;
+   justify-content: flex-end;
+   padding: 47px 30px;
+}
+
+.banner__txt {
+   max-width: 488px;
+}
+
+.banner__title {
+   color: rgb(61, 61, 63);
+   font-family: Mulish;
+   font-size: 42px;
+   font-weight: 700;
+   line-height: 50px;
+}
+
+.banner__btn {
+   width: 174px;
+   height: 50px;
+   border-radius: 50px;
+   background: rgb(253, 105, 90);
+   color: rgb(255, 255, 255);
+   font-family: Mulish;
+   font-size: 16px;
+   font-weight: 700;
+   line-height: 28px;
+   margin-top: 40px;
+}
+
+.banner__img {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+}
+
+.banner__img img {
+   width: 100%;
+   height: auto;
+}
+
+/* ------------------------------ Футер ------------------------------ */
+.footer {
+   padding-bottom: 10px;
+}
+
+.upFooter {
+   display: flex;
+   justify-content: space-between;
+   column-gap: 60px;
+   row-gap: 20px;
+   flex-wrap: wrap;
+}
+
+.footer-logo {
+   gap: 20px;
+}
+
+.contacts {
+   margin-top: 26px;
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+
+   color: rgb(55, 56, 61);
+   font-family: DM Sans;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 32px;
+}
+
+.contacts li{
+   display: flex;
+   align-items: center;
+   gap: 7px;
+}
+
+.upFooter__title {
+   color: rgb(61, 61, 63);
+   font-family: Mulish;
+   font-size: 16px;
+   font-weight: 700;
+   line-height: 22px;
+}
+
+.service__links {
+   margin-top: 26px;
+   color: rgb(102, 102, 102);
+   font-family: Mulish;
+   font-size: 16px;
+   font-weight: 600;
+   line-height: 150%;
+}
+
+.service__links li {
+   margin-bottom: 10px;
+}
+.service__links li:nth-last-child(1) {
+   margin-bottom: 0;
+}
+
+.upFooter__form {
+   margin-top: 26px;
+}
+
+.upFooter__form p {
+   display: flex;
+   flex-direction: column;
+}
+
+.upFooter__form label {
+   color: rgb(102, 102, 102);
+   font-family: Mulish;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 150%;
+}
+
+.upFooter__form input {
+   max-width: 296px;
+   height: 56px;
+   box-sizing: border-box;
+   border: 1px solid rgba(179, 179, 179, 0.21);
+   border-radius: 8px;
+   background: rgb(255, 255, 255);
+   padding: 16px;
+   font-family: Mulish;
+   font-size: 16px;
+   font-weight: 400;
+   color: #000;
+   margin-top: 8px;
+
+}
+
+.upFooter__form input::placeholder {
+   color: rgb(153, 153, 153);
+   font-family: Mulish;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 150%;
+   
+}
+
+.upFooter__btn {
+   margin-top: 24px;
+   width: 162px;
+   height: 53px;
+   border-radius: 8px;
+   background: rgb(253, 105, 90);
+   color: rgb(255, 255, 255);
+   font-family: Mulish;
+   font-size: 14px;
+   font-weight: 700;
+   line-height: 150%;
+}
+
+.downFooter {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 42px;
+   border-top: rgba(117, 117, 117, 0.25) 1px solid;
+   padding-top: 27px;
+}
+
+
+.copyright {
+   color: rgb(100, 100, 100);
+   font-family: Rubik;
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 14px;
+}
+
+.downFooter__links {
+   display: flex;
+   column-gap: 50px;
+   color: rgb(100, 100, 100);
+   font-family: Rubik;
+   font-size: 14px;
+   font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+   .portfolio__navigation_items {
+      gap: 35px;
+   }
+}
+
+@media (min-width: 992px) {
+   .burger__menu {
+      display: none;
+   }
+}
+
+@media (max-width: 992px) {
+   .navigation {
+      display: none;
+   }
+   .header__btn {
+      display: none;
+   }
+
+   .burger-btn {
+      display: block;
+   }
+
+   .primary__images {
+      display: none;
+   }
+   .primary__title {
+      font-size: 64px;
+      line-height: 74px;
+   }
+   .services {
+      flex-wrap: wrap;
+      row-gap: 40px;
+   }
+   .about {
+      display: block;
+   }
+   .about__info {
+      padding-top: 0px;
+   }
+   .about__images {
+      display: none;
+   }
+   .porfolio__cards {
+      grid-template-columns: 1fr 1fr;
+   }
+   .portfolio__navigation_items {
+      font-size: 14px;
+   }
+   .accordeon__item {
+      display: block;
+   }
+   .portfolio__navigation_items {
+      display: none;
+   }
+   .portfolio__btn {
+      margin-top: 15px;
+   }
+   .review__header_avatar {
+      width: 60px;
+      height: 60px;
+   }
+   .name {
+      font-size: 18px;
+   }
+   .him-company {
+      font-size: 14px;
+   }
+   .review__main {
+      font-size: 14px;
+      line-height: 135%;
+   }
+   .banner__content {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+   }
+   .banner__img {
+      display: none;
+   }
+   .upFooter {
+      column-gap: 20px;
+   }
+   .footer__service {
+      display: none;
+   }
+   .footer__company {
+      display: none;
+   }
+   .footer__social-media {
+      display: none;
+   }
+   .upFooter {
+      flex-direction: column;
+      row-gap: 0px;
+   }
+   .footer__form {
+      margin-top: 30px;
+   }
+}
+
+@media (max-width: 768px) {
+   .primary__title {
+      font-size: 64px;
+      line-height: 74px;
+   }
+   .primary__subtitle {
+      font-size: 18px;
+      line-height: 24px;
+   }
+   .services__title {
+      font-size: 36px;
+      line-height: 42px;
+   } 
+   .services__subtitle {
+      font-size: 14px;
+      line-height: 20px;
+   }
+   .about__title {
+      font-size: 36px;
+      line-height: 42px;
+   }
+   .about__subtitle {
+      font-size: 14px;
+      line-height: 20px;
+   }
+   .portfolio__title {
+      font-size: 36px;
+      line-height: 42px;
+   }
+   .reviews__title {
+      font-size: 36px;
+      line-height: 42px;
+   }
+   .reviews__content {
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+   }
+   .buttons {
+      flex-direction: row;
+   }
+   .btn-left {
+      transform: rotate(90deg);
+   }
+   .btn-right {
+      transform: rotate(90deg);
+   }
+   .btn-left:hover {
+      transform: rotate(90deg);
+   }
+   .btn-right:hover {
+      transform: rotate(90deg);
+   }
+   .all-reviews {
+      transform: translateX(10%);
+   }
+   .all-reviews__img {
+      width: 80%;
+   }
+   .banner__title {
+      font-size: 36px;
+      line-height: 42px;
+   }
+}
+
+@media (max-width: 576px) {
+   .primary__title {
+      font-size: 48px;
+      line-height: 54px;
+   }
+   .primary__subtitle {
+      font-size: 16px;
+      line-height: 20px;
+      margin-top: 30px;
+   }
+   .primary__buttons {
+      flex-direction: column;
+      align-items: start;
+   }
+   .get-started {
+      font-size: 16px;
+   }
+   .video-btn-txt {
+      font-size: 16px;
+   }
+   .services__button {
+      font-size: 16px;
+   } 
+   .services__cards {
+      display: flex;
+      flex-direction: column;
+   }
+   .card__subtitle {
+      text-align: center;
+   }
+   .about__btn {
+      font-size: 16px;
+   }
+   .porfolio__cards {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   .banner__title {
+      font-size: 24px;
+      line-height: 32px;
+   } 
+   .downFooter {
+      flex-direction: column;
+      row-gap: 20px;
+      align-items: center;
+   }
+   .copyright {
+      order: 2;
+   }
+   .downFooter__links {
+      order: 1;
+   }
+}
